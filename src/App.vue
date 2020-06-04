@@ -1,17 +1,15 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <plateform class="center"></plateform>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import plateform from '@/views/plateform.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+	plateform
   }
 }
 </script>
@@ -23,6 +21,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  /* overflow-y: scroll; */
+  /* overflow-x: hidden; */
+}
+.center {
+  width: 1440px;
+  margin: auto;
 }
 </style>
